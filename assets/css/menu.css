@@ -1,0 +1,93 @@
+
+#wrapper > .bg {
+background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/109background.jpg");
+background-size: cover;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 35px;
+    margin-top: 0;
+    padding: 3.5%;
+}
+
+.section1 {
+    margin-top: 2%;
+}
+
+.section h1, .food-item h3 {
+    font-family: Teko, sans-serif;
+}
+
+.section > div span {
+    font-weight: bold;
+}
+
+.food-item {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+
+.food-item p {
+    font-size: 1.2em;
+    font-family: Barlow
+}
+
+.section h1 {
+    font-size: 4.4em;
+    margin-bottom: -20px;
+    line-height: 150%;
+    font-weight: bold
+}
+
+.food-item h3 {
+    font-size: 2.5em;
+    margin-bottom: -.25rem
+    
+}
+
+.section h6 {
+    font-size: 1.7rem;
+    color: red;
+}
+
+@media (max-width: 1440px) {
+    .section{
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+    #wrapper > .bg {
+        background-size: auto, cover
+}
+
+
+@media  (max-width: 955px) {
+    .section {
+        padding: 2%;
+        margin-top: 2%;
+    }
+    .section > div {
+        margin-bottom: -8%;
+    }
+}
+
+@media  (max-width: 425px) {
+    #wrapper > .bg {
+        height: 70vh;
+    }
+    .section{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))}
+   .section > div {
+        margin-bottom: -8%;
+    }
+    #intro img {
+        width: 10rem;
+    }
+    .bg > img {
+        position: relative;
+        width: 2rem;
+        top: -9em;
+    }
+}
+

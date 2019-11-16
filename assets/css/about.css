@@ -1,0 +1,64 @@
+#wrapper > .bg {
+background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/109background.jpg");
+    
+    background-position:								center,													center;
+}
+
+#main {
+    padding-top: 2rem
+}
+
+.about-cont {
+    padding: 5rem
+}
+
+.about-cont img {
+    float: left;
+    margin-right: 3rem
+}
+
+.about-cont > p {
+    font-size: 1.4rem;
+     font-family: 'Oranienbaum', serif;
+    line-height: 160%;
+}
+
+#about-title {
+      padding: 0;
+    font-size: 2.5rem;
+  font-family: 'Kaushan Script', cursive;
+  border-bottom: 4px solid black;
+  text-align: center;
+}
+
+.about-cont p span {
+    font-size: 2rem;
+     font-family: 'Kaushan Script', cursive;
+        
+}
+
+@media (max-width: 768px) {
+   
+    .about-cont  > p{
+        margin-left: 3%;
+        word-spacing: 1px;
+    }
+    .about-cont img {
+        margin:5% 5% 5% 18%
+    }
+}
+
+@media (max-width: 425px) {
+    .about-cont img {
+        margin-left: 20%;
+    }
+    .about-cont > p {
+        margin-left: 1%;
+    }
+}
+
+@media (max-width:320px) {
+    .about-cont img {
+        margin: 5%
+    }
+}
