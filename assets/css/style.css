@@ -1,0 +1,150 @@
+#wrapper {
+    background-size: cover;
+    background-position: 0 68%;
+    height: 100vh;
+}
+
+#logo {
+    width: 15%;
+    padding: 1%;
+    position: absolute;
+    left: 6%;
+    top: 2%;
+}
+
+#logo img {
+    width: 100%;
+}
+
+#header {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 20%;
+}
+
+#navigation {
+    color: #ffffff;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-transition: -moz-transform 1s ease, opacity 1s ease;
+    -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+    -ms-transition: -ms-transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease;
+    background: rgba(255, 255, 255, 0.175);
+    height: 4rem;
+    width: 50%;
+    /* margin: -4rem auto 0 auto; */
+    /* overflow: hidden; */
+    padding: 1rem 2rem 0 2rem;
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+}
+
+#navigation ul.links {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    text-transform: uppercase;
+
+}
+
+#navigation ul.links li {
+    color: white;
+    margin-right: .8rem
+}
+
+#navigation ul li a {
+    color: white
+}
+
+.events {
+    padding: 5%;
+}
+
+
+.event-children > div {
+    color: white;
+    text-align: center;
+    height: 30%;
+    background-color:grey;
+    padding: 5%;
+}
+
+.event-children > div img {
+    height: 100%;
+}
+
+.event-children {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5%;
+    
+}
+
+@media (max-width: 1024px) {
+    #header {
+        left: 5%;
+    }
+
+    #header .logo {
+        font-size: 2rem !important;
+       }
+
+    #navigation {
+        padding: 1rem 0 0 0
+    }
+    #navigation ul.links li {
+        margin-right: 0
+    }
+
+}
+
+@media (max-width: 768px) {
+    #navigation {
+        display: none
+    }
+    #header .logo {
+        font-size: 1.5rem !important;
+       }
+}
+
+@media (max-width: 425px) {
+    #wrapper {
+        background-position: 30% 0
+    }
+    #logo {
+        width: 25%;
+    }
+    #header {
+        left: 0
+    }
+    #header .logo {
+        /* font-size: 1rem !important; */
+        line-height: 1.7rem;
+    }
+}
+
+@media (max-width: 320px) {
+    #logo {
+        width: 30%;
+    }
+}
