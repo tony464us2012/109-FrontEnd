@@ -64,13 +64,17 @@
 
     #wrapper>.bg {
         background-size: contain;
-        background-position: 0% 0%
+        background-position: 0% 0%;
     }
+    #main {
+        margin-top: -5%
+    }
+
 }
 
 @media (max-width: 375px) {
     .about-cont img {
-        margin-left: 15%
+        margin-left: 15%;
     }
 }
 
