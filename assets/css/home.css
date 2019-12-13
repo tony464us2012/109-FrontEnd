@@ -6,17 +6,18 @@
 
 #wrapper>.bg {
     background-image:  linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) , url("../../images/new-nica.jpeg");
-    background-size: cover
+    background-size: cover;
+    height: 100vh;
 }
 
 #header {
-    margin-top: 50rem
+    margin-top: 30rem
 }
 
 #nav {
     position: relative;
     margin-right: 0;
-    top: -64rem;
+    top: -44rem;
     width: 75%;
 
 }
@@ -24,8 +25,8 @@
 
 .logo-cont {
     position: absolute;
-    width: 15rem;
-    height: 15rem;
+    width: 11rem;
+    height: 11rem;
     top: 2rem;
     left: 2rem;
 }
