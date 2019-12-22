@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/employment.css" />
     <link rel='icon' href='images/logo-01.png' type="image/png"  sizes="16x16"/>
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Oranienbaum|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Oranienbaum|Courier+Prime|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 
 <body class="is-preload">
@@ -59,132 +61,77 @@
                         <li><p>Employee Benefits and Application of Policies</p></li>
                     </ul>
                     <p>The policies and principles of EEO also apply to the selection and treatment of independent contractors, personnel working on our premises who are employed by temporary agencies and any other persons or firms doing business for or with 109 Burger Joint.</p>
+                    <p>Please email us your resume at <span style='color: red'>109BURGERJOINT@GMAIL.COM</span></p>
                 </div>
                 <!--            <div class="employ-pic">-->
                 <!--            </div>-->
-                <div class="sec2">
-                    <form id="form" action="POST" netlify>
-
-                        <div class="field">
-                            <label for="inputFirstName">First Name&#42;</label>
-                            <input type="text" id="inputFirstName" placeholder="Name">
-
-                            <div class="field">
-                                <label for="inputLastName">Last Name&#42;</label>
-                                <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name">
+                <!-- <div class="row">
+                    <form id="form" class="col s12" action="POST" netlify>
+                        <p>&lpar;&ast;&rpar; Required Fields</p>
+                        <h5>Submit Your Resume</h5>
+                            <div class="row form-row">
+                                    <div class="field col s12">
+                                      <input id="fisrt_name" type="text" class="validate">
+                                      <label for="first_name">First Name &ast;</label>
+                                    </div>
                             </div>
-                        </div>
-                        <div class="field">
-                            <label for="inputAddress">Address&#42;</label>
-                            <input type="text" id="inputAddress" placeholder="1234 Main St" required>
-                        </div>
-                        <div class="field">
-                            <label for="inputAddress2">Address 2</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                        </div>
-                        <div class="fields">
-                            <div class="field">
-                                <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity">
+                                <div class="row form-row">
+                                        <div class="field col s12">
+                                          <input id="last_name" type="text" class="validate">
+                                          <label for="last_name">Last Name &ast;</label>
+                                        </div>
+                                    </div>
+                                <div class="row form-row">
+                                            <div class="field col s12">
+                                              <input id="phone" type="number" class="validate">
+                                              <label for="phone">Phone Number &ast;</label>
+                                            </div>
+                                    </div>
+                                <div class="row form-row">
+                                            <div class="field col s12">
+                                              <input id="email" type="email" class="validate">
+                                              <label for="email">Email</label>
+                                            </div>
+                                    </div>
+                        <div id="checkbox-title">Areas of Interest: &ast;</div>
+                        <div class="form-check">
+                        <div class="check-cont">
+                            <label>
+                                <input id="indeterminate-checkbox waiter" type="checkbox" />
+                                <span>Waiter</span>
+                                </label>
                             </div>
-                            <div class="field">
-                                <label for="inputState">State</label>
-                                <select id="inputState" class="form-control">
-                                    <option selected>Choose...</option>
-                                    <option>AL</option>
-                                    <option>AK</option>
-                                    <option>AZ</option>
-                                    <option>AR</option>
-                                    <option>CA</option>
-                                    <option>CO</option>
-                                    <option>CT</option>
-                                    <option>DE</option>
-                                    <option>FL</option>
-                                    <option>GA</option>
-                                    <option>HI</option>
-                                    <option>ID</option>
-                                    <option>IL</option>
-                                    <option>IN</option>
-                                    <option>IA</option>
-                                    <option>KS</option>
-                                    <option>KY</option>
-                                    <option>LA</option>
-                                    <option>ME</option>
-                                    <option>MD</option>
-                                    <option>MA</option>
-                                    <option>MI</option>
-                                    <option>MN</option>
-                                    <option>MS</option>
-                                    <option>MO</option>
-                                    <option>MT</option>
-                                    <option>NE</option>
-                                    <option>NV</option>
-                                    <option>NH</option>
-                                    <option>NJ</option>
-                                    <option>NM</option>
-                                    <option>NY</option>
-                                    <option>NC</option>
-                                    <option>ND</option>
-                                    <option>OH</option>
-                                    <option>OK</option>
-                                    <option>OR</option>
-                                    <option>PA</option>
-                                    <option>RI</option>
-                                    <option>SC</option>
-                                    <option>SD</option>
-                                    <option>TN</option>
-                                    <option>TX</option>
-                                    <option>UT</option>
-                                    <option>VT</option>
-                                    <option>VA</option>
-                                    <option>WA</option>
-                                    <option>WV</option>
-                                    <option>WI</option>
-                                    <option>WY</option>
-                                </select>
-                            </div>
-                            <div class="field">
-                                <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip">
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label for="inputAddress">Phone&#42;</label>
-                            <input type="phone" class="form-control" id="inputAddress" placeholder="XXX-XXX-XXXX" required>
-                        </div>
-                        <div class="field">
-                            <label for="inputAddress">Email&#42;</label>
-                            <input type="email" class="form-control" id="inputAddress" placeholder="ex: myname@example.com" required>
-                        </div>
-                        <p>Areas of Interest:</p>
-                        <div class="field">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                                Waiter
-                            </label>
-                        </div>
-                        <div class="field">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                            <label class="form-check-label" for="defaultCheck2">
-                                Line Cook
-                            </label>
-                        </div>
-                        <div class="field">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                            <label class="form-check-label" for="defaultCheck2">
-                                Dishwasher
-                            </label>
-                        </div>
-                        <div class="field file">
-                            <label for="exampleFormControlFile1">Upload Resume:</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
+                            <div class="check-cont">
+                                    <label>
+                                        <input id="indeterminate-checkbox line-cook" type="checkbox" />
+                                        <span>Line Cook</span>
+                                        </label>
+                                    </div>
+                                    <div class="check-cont">
+                                            <label>
+                                                <input id="indeterminate-checkbox assistant" type="checkbox" />
+                                                <span>Kitchen Assistant</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div id="upload-title">Upload Your Resume &ast;</div>
+                                      <div class="file-field input-field">
+                                            <div class="btn">
+                                              <span>File</span>
+                                              <input id="file" type="file">
+                                            </div>
+                                            <div class="file-path-wrapper">
+                                              <input class="file-path validate" type="text">
+                                            </div>
+                                          </div>
                         <div class="field">
                             <div data-netlify-recaptcha='true'></div>
                         </div>
-                        <input type="submit" class="btn btn-primary">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                          </button>
                     </form>
-                </div>
+                </div> -->
             </div>
             <footer id="footer">
                 <div class="footer-section">
@@ -220,6 +167,7 @@
 
 
     <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -227,6 +175,39 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- <script>
+    $(document).ready(function(){
+    $('select').formSelect();
+  });
+    </script> -->
+    <script>
+        $('form').on('submit', (e) => {
+            e.preventDefault();
+            const first_name = $('#first-name').val();
+            // const last_name = $('#last-name').val();
+            // const phone = $('#phone').val();
+            // const email = $('#email').val();
+            // const waiter = $('waiter').val();
+            // const line_cook = $('line-cook').val();
+            // const assistant = $('assistant').val();
+            // const resume = $('file').val()
+
+            const data = {
+                first_name
+                // last_name,
+                // phone,
+                // email
+                // waiter,
+                // line_cook,
+                // assistant,
+                // resume
+            }
+
+            $.post('http://localhost:8080/email', data, function() {
+                console.log('Server received our data')
+            })
+        })
+    </script>
 
 </body>
 
