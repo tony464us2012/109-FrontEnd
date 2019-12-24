@@ -1,29 +1,21 @@
 #wrapper {
     background-size: cover;
     background-position: 0 68%;
-    height: 100vh;
+    height: 60vh;
 }
 
-#logo {
-    width: 15%;
-    padding: 1%;
-    position: absolute;
-    left: 6%;
-    top: 2%;
+.logo-container {
+    width: 100px
 }
 
-#logo img {
-    width: 100%;
+ #logo {
+    width: 100px
 }
 
-#header {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    font-size: 20%;
+.sidenav {
+    display: flex;
+    flex-direction: column;
 }
-
-
 
 #nav {
     color: #ffffff;
@@ -38,13 +30,13 @@
     background: rgba(255, 255, 255, 0.175);
     height: 4rem;
     width: 50%;
-    /* margin: -4rem auto 0 auto; */
-    /* overflow: hidden; */
-    padding: 1rem 2rem 0 2rem;
+     margin: -4rem auto 0 auto; 
+     overflow: hidden; 
+     padding: 1rem 2rem 0 2rem;
     position: relative;
     z-index: 2;
     margin-left: auto;
-}
+} 
 
 #nav ul.links {
     display: -moz-flex;
@@ -140,7 +132,7 @@
         left: 0
     }
     #header .logo {
-        /* font-size: 1rem !important; */
+        font-size: 1rem !important; 
         line-height: 1.7rem;
         font-size: 8%;
     }
@@ -150,4 +142,4 @@
     #logo {
         width: 30%;
     }
-}
+} 

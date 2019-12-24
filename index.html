@@ -6,55 +6,74 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/about.css" />
 		<link rel="stylesheet" href="assets/css/home.css" />
 		<link rel='icon' href='images/logo-01.png' type="image/png"  sizes="16x16"/>
-		<link href="https://fonts.googleapis.com/css?family=Teko|BenchNine|Staatliches|Kaushan+Script|Barlow|Oranienbaum|Barlow+Condensed&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Teko|BenchNine|Sancreek|Staatliches|Kaushan+Script|Barlow|Oranienbaum|Barlow+Condensed|Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		rel="stylesheet">
+		
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-                <div class="logo-cont">
-                    <img src="images/109 Logo.png" />
-                </div>
-
-				<!-- Header -->
-					<header id="header">
-						<a href="#" class="logo">Where Artisan Burgers meets Craft Beers</a>
-					</header>
-
-				<!-- Nav -->
+	<body> 
+		 
+		<div id="wrapper"> 
 					<nav id="nav">
-							<ul class="links">
-									<li class="active"><a href="/index">Home</a></li>
-									<li><a href="/menu">Menu</a></li>
-									<li><a href="https://sheltered-ridge-76505.herokuapp.com/">On tap</a></li>
-									<li><a href="/about">About Us</a></li>
-									<li><a href="/employment">Employment</a></li>
-								</ul>
-						<ul class="icons">
-							<li><a href="https://twitter.com/109burgerjoint?lang=en" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/109burgerjoint/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/109burgerjoint/?hl=en" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						</ul>
-					</nav>
+						<ul class="links">
+								<li ><a href="/index">Home</a></li>
+								<li><a href="/menu">Menu</a></li>
+								<li><a href="https://sheltered-ridge-76505.herokuapp.com/">On tap</a></li>
+								<li><a href="/about">About Us</a></li>
+								<li><a href="/employment">Employment</a></li>
+							</ul>
+					<ul class="icons">
+						<li><a href="https://twitter.com/109burgerjoint?lang=en" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/109burgerjoint/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/109burgerjoint/?hl=en" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+				</nav> 
 
 				<!-- Main -->
-					<!-- <div id="main">
-                        <h1 class="home-header">Events</h1>
-                     <div class="content-cont">
-                        <div class="content-item">
-                            <h2>Happy Hour</h2>
-                            <p>Monday-Friday</p>
-                        </div>
-                        <div class="content-item"></div>
-                     </div>
+					<div id="main2">
+                        <div class="logo-cont">
+							<img src="images/109 Logo.png">
+						</div>
+						<h5 class="display-intro">Home<br> of <br>the</h5>
+						<h2 class="display-title">Artisan Burgers</h2>
+					 </div>
+					 <div id="main3">
+						<div class="beer-info">
+							<div class="craft-container">
+								<div class="craft-container-item">
+									<div class="icon-container">
+										<i class="fas fa-beer"></i> 
+									</div>
+									<h6 class="hh"> Happy Hour</h6>
+									<div class="craft-container-item-content">
+										Monday-Friday<br>
+										5:00pm - 7:00pm
+									</div>
+								</div>
+									<div class="craft-container-item">
+										<div class="icon-container">
+											<i class="fas fa-book-open"></i></i> 
+										</div>
+										<h6 class="tt">Trivia Tuesday</h6 c>
+										<div class="craft-container-item-content"></div>
+									</div>
+								<div class="craft-container-item">
+									<div class="icon-container">
+										<i class="fas fa-wine-glass-alt"></i> 
+									</div>
+									<h6 class="ww">Wine Wendsday</h6>
+									<div class="craft-container-item-content"></div>
+								</div>
+							</div>
+						</div>
+					 </div>
 
 				
 					<div class="copyright">&copy;2020 109BurgerJoint All rights reserved.  </div>	
-					</div> -->
+					<!-- </div> -->
 		
 
         </div>
@@ -66,6 +85,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+			<script>
+				$(document).ready(function(){
+					$('.sidenav').sidenav()
+				})
+			
+				</script>
 
 	</body>
 </html>
