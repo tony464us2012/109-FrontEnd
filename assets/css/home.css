@@ -122,57 +122,50 @@
     font-family: 'Teko'
 }
 
-@media (max-width: 1440px) {
-    /* #header {
-        margin-top: 30rem
-    }
-    .logo-cont {
-        width: 10rem;
-        height: 10rem
-    }
-    #nav {
-        top: -45rem
-    } */
-    
-}
-/* @media (max-width: 1024px) {
-    #header {
-        margin-top: 25rem
-    }
-    #nav {
-        top: -40rem
-    }
 
-}
-@media (max-width: 768px) {
-    .logo-cont{
+ @media (max-width: 768px) {
+    .logo-cont {
+        position: absolute;
         width: 8rem;
         height: 8rem;
+        top: 5rem;
+        right: 2rem;
     }
-    #header {
-        margin-top: 23rem;
-    }
-    #header .logo {
-        font-size: 1.3rem;
+    .display-intro {
+        margin-top: 5rem
     }
 
+    #main2 {
+    background-position: 0 0;
 }
+    .display-title {
+    font-size: 7rem;
+}
+    }
+
+
 @media (max-width: 425px) {
-    #wrapper>.bg {
-         background-position: 30% 0; 
+    .logo-cont {
+        position: absolute;
+        width: 7rem;
+        height: 7rem;
+        top: 2rem;
+        left: 2rem;
     }
-    .logo-cont{
-        width: 6rem;
-        height: 6rem;
-    }
-    #header .logo {
-        line-height: 1.5rem;
+    .display-intro {
+        margin-top: 11rem;
+        font-size: 1.5rem
     }
 
+    #main2 {
+    background-position: 40% 25%;
 }
-@media (max-width: 320px) {
-    #header .logo {
-        padding: .8rem 0
+    .display-title {
+    font-size: 4.2rem;
+    line-height: 99%
+}
     }
 
-} */
+@media (max-width: 320px) {
+    
+} 
