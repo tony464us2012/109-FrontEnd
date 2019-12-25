@@ -1,11 +1,11 @@
+
 #wrapper>.bg {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/background-header2.jpg");
-    background-position: 0% 0%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/background2.png");
     background-size: cover
 }
 
 #header {
-    margin-top: 11rem
+    margin-top: 5rem
 }
 
 #owners {
@@ -43,11 +43,19 @@
 
 @media (max-width: 1440px) {
     #wrapper>.bg {
-        background-position: 0 50%
+        background-size: cover;
     }
 }
 
 @media (max-width: 768px) {
+
+    #header {
+        margin-top: 2rem
+    }
+
+#wrapper>.bg {
+    background-size: contain
+}
 
     .about-cont>p {
         word-spacing: 1px;
@@ -64,7 +72,6 @@
 
 @media (max-width: 425px) {
     #main {
-        padding-top: 1rem;
         margin-top: -5%
     }
 
@@ -78,7 +85,8 @@
     }
 
     #header {
-        margin-top: 2rem
+        margin-top: 0;
+        margin-bottom: 1rem
     }
 
 
@@ -91,7 +99,9 @@
 
 @media (max-width: 375px) {
     #main {
-        margin-top: -2rem
+        margin-top: -2rem;
+        margin-bottom: 1.5rem;
+        padding-top: 2rem !important
     }
 
     .about-cont img {
