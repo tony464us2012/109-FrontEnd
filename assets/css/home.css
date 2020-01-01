@@ -32,7 +32,7 @@ body {
 }
 
 #main2 {
-    height: 100vh !important;
+    height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.423), rgba(0, 0, 0, 0.423)), url('/images/new-nica.jpeg');
     background-size: cover;
@@ -351,18 +351,19 @@ span {
 @media (max-width: 425px) {
     .logo-cont {
         position: absolute;
-        width: 7rem;
-        height: 7rem;
+        width: 5rem;
+        height: 5rem;
         top: 2rem;
         left: 1rem;
     }
     #main2 {
     background-position: 40% 25%;
+    height: 70vh;
 }
     .display-title {
     font-size: 4.2rem;
     line-height: 99%;
-    margin-top: 18rem
+    margin-top: 12rem
     }
     .slash {
     height: 100px; 
