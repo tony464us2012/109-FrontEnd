@@ -288,6 +288,9 @@ span {
 }
 
 @media (max-width: 1024px) {
+    #main2 {
+        background-position: 40% 20%
+    }
     .craft-container {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
@@ -297,19 +300,18 @@ span {
     .display-title {
         margin-top: 22rem
     }
+
 }
 
  @media (max-width: 768px) {
     .logo-cont {
         position: absolute;
-        width: 8rem;
-        height: 8rem;
+        width: 10rem;
+        height: 10rem;
         top: 2rem;
         left: 2rem;
     }
-    #main2 {
-    background-position: 0 0;
-}
+   
     .display-title {
     font-size: 7rem;
     margin-top: 15rem    
@@ -348,27 +350,22 @@ span {
 }
     }
 
-    @media (max-width: 500px) {
-        #main2 {
-            background-position: 40% 25%;
-            
-        }
-    }
+    
 
 
 @media (max-width: 435px) {
     .logo-cont {
         position: absolute;
-        width: 5rem;
-        height: 5rem;
-        top: 2rem;
+        width: 8rem;
+        height: 8rem;
+        top: 1rem;
         left: 1rem;
     }
  
     .display-title {
-    font-size: 4.2rem;
+    font-size: 5rem;
     line-height: 99%;
-    margin-top: 18rem
+    margin-top: 60%
     }
     .slash {
     height: 100px; 
@@ -389,23 +386,26 @@ span {
     #footer {
         margin-top: -12%
     }
+    .craft-container {
+    height: 135vh;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.423), rgba(0, 0, 0, 0.423)), url('/images/background-header.jpg');
+    background-size: cover;
+    background-position: 75% 0%;
+
+}
     }
 
     @media (max-width: 375px) {
-        .craft-container {
-        height: 135vh;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        background-image: linear-gradient(rgba(0, 0, 0, 0.423), rgba(0, 0, 0, 0.423)), url('/images/background-header.jpg');
-        background-size: cover;
-        background-position: 75% 0%;
-
-    }
         .slash {
         margin-top: -24%;
       }
       .new-title {
         line-height: 125%;
     }
+    .display-title {
+        margin-top: 75%
+        }
     }
 
 @media (max-width: 320px) {
