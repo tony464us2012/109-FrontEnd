@@ -41,6 +41,18 @@
 
 }
 
+#footer section h1 {
+    font-size: 2rem !important
+}
+#footer section p {
+    font-size: 1rem !important;
+    margin-bottom: .5rem !important;
+    text-align: center
+}
+#footer section p span {
+    font-weight: bold !important;
+}
+
 @media (max-width: 1440px) {
     #wrapper>.bg {
         background-size: cover;
