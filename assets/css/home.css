@@ -326,7 +326,7 @@ span {
     font-size: 1.5rem
 }
     .craft-container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     background-size: cover;
     background-repeat: no-repeat;
     grid-gap: 5px;
@@ -363,7 +363,7 @@ span {
     .display-title {
     font-size: 4.2rem;
     line-height: 99%;
-    margin-top: 12rem
+    margin-top: 14rem
     }
     .slash {
     height: 100px; 
@@ -371,6 +371,9 @@ span {
       }
     .slash-black {
     margin-top: -8%;
+      }
+      .craft-container{
+        height: 135vh;
       }
     .new-title {
         font-size: 2.5rem;
@@ -389,9 +392,11 @@ span {
     @media (max-width: 375px) {
         .craft-container {
         height: 135vh;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         background-image: linear-gradient(rgba(0, 0, 0, 0.423), rgba(0, 0, 0, 0.423)), url('/images/background-header.jpg');
         background-size: cover;
-        background-position: 75% 0%
+        background-position: 75% 0%;
+
     }
         .slash {
         margin-top: -24%;
