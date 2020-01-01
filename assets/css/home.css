@@ -32,7 +32,7 @@ body {
 }
 
 #main2 {
-    height: 100vh;
+    height: 100vh !important;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.423), rgba(0, 0, 0, 0.423)), url('/images/new-nica.jpeg');
     background-size: cover;
