@@ -330,7 +330,8 @@ span {
     background-size: cover;
     background-repeat: no-repeat;
     grid-gap: 5px;
-    margin-bottom: -6rem
+    margin-bottom: -6rem;
+    height: 125vh;
 }
      i {
     font-size: 2.5rem;
@@ -347,6 +348,13 @@ span {
 }
     }
 
+    @media (max-width: 500px) {
+        #main2 {
+            background-position: 40% 25%;
+            
+        }
+    }
+
 
 @media (max-width: 435px) {
     .logo-cont {
@@ -356,14 +364,11 @@ span {
         top: 2rem;
         left: 1rem;
     }
-    #main2 {
-    background-position: 40% 25%;
-    height: 70vh;
-}
+ 
     .display-title {
     font-size: 4.2rem;
     line-height: 99%;
-    margin-top: 14rem
+    margin-top: 18rem
     }
     .slash {
     height: 100px; 
@@ -371,9 +376,6 @@ span {
       }
     .slash-black {
     margin-top: -8%;
-      }
-      .craft-container{
-        height: 135vh;
       }
     .new-title {
         font-size: 2.5rem;
