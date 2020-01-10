@@ -54,7 +54,7 @@ body {
     text-transform: capitalize !important;
     text-shadow: 4px 5px 5px black;
     text-align: center;
-    margin-top: 15rem
+    margin-top: 15rem !important
 }
 
 .slash {
