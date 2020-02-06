@@ -3639,6 +3639,20 @@ input, select, textarea {
          
 		}
 
+		.delivery-cont {
+			display: flex;
+			justify-content: center;
+		}
+		.delivery-logo {
+			width: 60px;
+			padding-top: 2%;
+		}
+		.delivery-logo img {
+			width: 100%
+		}
+		.dl-1 img {
+			 margin-top: -.8rem
+		}
 		
 
 /* Footer */

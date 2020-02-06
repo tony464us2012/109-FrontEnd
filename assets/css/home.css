@@ -8,7 +8,7 @@
     border: 2px solid black
 }
 
-body {
+body, #wrapper {
     background-color: rgb(243, 239, 239);
 }
 
@@ -18,9 +18,8 @@ body {
     width: 100vw !important;
     max-width: 150rem;
     padding-left: 5rem;
-    border-bottom: 4px solid red
+    border-bottom: 4px solid red;
 }
-
 
 .logo-cont {
     position: absolute;
@@ -64,7 +63,7 @@ body {
 .slash {
     margin-bottom: 0;
     background-color: rgb(243, 239, 239) ;
-    height: 100px; 
+    height: 70px; 
     transform: skewY(-3deg);
     margin-top: -6.5%;
     z-index: 4
@@ -83,7 +82,8 @@ body {
 .slash2 {
     background-color: rgb(243, 239, 239);
     margin-bottom: 0;
-    height: 80px; 
+    margin-top: 2%;
+    height: 65px; 
     transform: skewY(3deg);
   }
 
@@ -108,25 +108,102 @@ body {
     margin-bottom: 3rem;
 }
 
-.new-title {
+/* Slideshow container */
+.slideshow-container {
+    max-width: 900px;
+    height: 60vh;
+    position: relative;
+    margin: auto;
+    border: 2px solid black
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border: none
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .new-title {
     position: relative;
     font-size: 4rem;
     text-align: center;
-    margin: 2rem auto;
+    margin: 0 auto -4rem !important;
     font-family: 'Girassol';
     margin: 0;
     line-height: 90%;
     z-index: 5;
+    text-transform: uppercase;
 }
 
 .new-title-span {
     color: red;
-    font-size: 2rem
+    font-size: 2rem !important
 }
-
 .craft-container {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
     display: flex !important;
     height: 90vh;
     padding: 0 10% !important;
@@ -138,6 +215,10 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+.carousel {
+    width: 60%;
+    margin: 4% 20% 1%
+}
 
 .craft-container-item {
     background-color: white;
@@ -145,8 +226,8 @@ body {
     border-radius: 2px;
     text-align: center;
         box-shadow: 3px 3px 10px black;
-        height: 320px !important;
         width: 250px;
+        height: 40%;
         margin-left: 1rem
     }
 
@@ -238,6 +319,20 @@ span {
     margin-top: .5rem;
     text-align: center
 }
+.delivery-cont {
+    display: flex;
+    justify-content: center;
+}
+.delivery-logo {
+    width: 60px;
+    padding-top: 2%;
+}
+.delivery-logo img {
+    width: 100%
+}
+.dl-1 img {
+     margin-top: -.8rem
+}
 
 @media (max-width: 2560px) {
     .logo-cont {
@@ -269,7 +364,7 @@ span {
         margin: 2rem auto -1rem;
     }
     .links li a {
-        font-size: 1.2rem !important
+        font-size: 1rem !important
     }
     .display-title {
         font-size: 13rem;
@@ -279,7 +374,6 @@ span {
         display: flex;
     }
     .craft-container-item {
-        height: 500px;
         width: 500px
     }
     .icon-container {
@@ -339,24 +433,25 @@ span {
 }
 @media (max-width: 1440px) {
     #main2 {
-        background-position: center center
+        
+        background-position: -25% 75%
     }
     .logo-cont {
         width: 10rem;
         height: 10rem
     }
     .links li a {
-        font-size: 1.1rem !important
+        font-size: 1rem !important
     }
     .craft-container {
         padding: 0 2%
     }
     .craft-container-item {
-        height: 280px !important
+        width: 25% !important
     }
     .display-title {
         font-size: 12rem;
-        margin-top: 20rem !important
+        margin-top: 18rem !important
     }
     .slash-black {
         height: 100px
@@ -378,8 +473,18 @@ span {
         height: 75vh
     }
     .craft-container-item {
-        height: 50% !important
+        height: 42% !important
     }
+    .icon-container i {
+        font-size: 1.8rem !important
+    }
+    .craft-container h6 {
+        font-size: 2rem !important
+    }
+    .craft-container p {
+        font-size: 1rem !important
+    }
+
     .display-title {
         margin-top: 9rem;
         line-height: 99%;
@@ -418,20 +523,7 @@ span {
     .slash{
         margin-top: -10% !important;
 }
-    
 
-.craft-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0 10%    ;
-        align-items: center;
-        justify-content: center;
-    }
-    .craft-container-item {
-        margin: 0 2%;
-        width: 300px
-    }
 }
 
 @media (max-width: 800px) {
@@ -440,11 +532,12 @@ span {
         height: 8rem;
     }
     .craft-container {
-        height: 95vh
+        height: 95vh;
+        padding: 0 !important;
     }
     .craft-container-item {
-        height: 200px !important;
-        width: 200px;
+        height: 30% !important;
+        align-self: center !important;
     }
     .slash {
         margin-top: -11.5% !important;
@@ -462,9 +555,6 @@ span {
     .event-content p {
         font-size: 1rem !important
     }
-    .g-cont {
-        margin-top: -7rem
-    }
 }
 
 @media (max-width: 620px) {
@@ -479,7 +569,7 @@ span {
     }
     .copyright {
         padding-left: 5%;
-        padding-right: 5%
+        padding-right: 5%;
     }
 }
 
@@ -488,6 +578,15 @@ span {
         height: 50vh !important;
         padding-left: 1%;
         padding-right: 1%;
+        background-position: 0 0
+    }
+    .new-title {
+        border: 2px solid black;
+        margin-top: -6rem !important;
+        margin-bottom: -8rem !important
+    }
+    .new-title-span {
+        font-size: 1.4rem !important
     }
     .logo-cont {
         height: 5rem;
@@ -511,15 +610,14 @@ span {
         font-size: 1.5rem;
 
     }
+    .craft-container {
+        display: block !important
+    }
     .craft-container-item {
-        height: 200px !important
+        width: 60% !important;
+        margin: 0 auto
     }
-    .craft-container-item:nth-child(2) {
-        margin-top: -1.5rem
-    }
-    .g-cont {
-    margin-top: -3rem
-     }
+   
      #footer {
         margin-top: -25% !important
     }
@@ -549,13 +647,13 @@ span {
     }
 }
 
-@media (max-width: 325px){
+@media (max-width: 320px){
     .display-title {
         font-size: 3.5rem;
         margin-top: 45% !important
     }
     .slash {
-        margin-top: -29% !important
+        margin-top: -28% !important
     }
     .new-title-span {
         font-size: 1.3rem
