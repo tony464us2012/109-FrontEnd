@@ -1,7 +1,14 @@
 #wrapper>.bg {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/109background.jpg");
-    background-size: contain;
-
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/burger-cooking.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -2% -2%
+}
+#header {
+    margin-top: 5.2rem
+}
+.description-title {
+    font-family: 'Jacques Francois Shadow', cursive;
 }
 .section {
     display: grid;
@@ -87,6 +94,10 @@
     @media (max-width: 425px) {
         #wrapper>.bg {
             background-size: contain;
+            /* background-position: 0 0 */
+        }
+        #main {
+            margin-top: -5%
         }
 
         .section {
@@ -97,4 +108,16 @@
             margin-bottom: -8%;
         }
 }
+
+    @media(max-width: 400px) {
+        #wrapper>.bg {
+            padding-bottom: 5% !important
+        }
+        #main {
+            margin-top: -10%
+        }
+        #header {
+            margin-top: 3rem !important
+        }
+    }
 

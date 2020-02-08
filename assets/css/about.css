@@ -1,7 +1,9 @@
 
 #wrapper>.bg {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/background2.png");
-    background-size: cover
+    background-color: black;
+    background-image: url("../../images/outside.jpg");
+    background-size: contain;
+    background-position: 50% -28rem;
 }
 
 #header {
@@ -52,10 +54,22 @@
 #footer section p span {
     font-weight: bold !important;
 }
+@media (min-width: 2500px) {
+    #wrapper>.bg {
+        background-size: cover;
+        background-position: 50% -25rem
+    }
+}
 
 @media (max-width: 1440px) {
     #wrapper>.bg {
         background-size: cover;
+        background-position: 50% -13rem
+    }
+}
+@media (max-width: 1024px) {
+    #wrapper>.bg {
+        background-position: 50% -15rem
     }
 }
 
@@ -85,6 +99,9 @@
 @media (max-width: 425px) {
     #main {
         margin-top: -5%
+    }
+    #wrapper>.bg {
+        background-position: 50% -5rem !important
     }
 
     #owners {
