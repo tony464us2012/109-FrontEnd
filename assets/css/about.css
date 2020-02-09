@@ -23,24 +23,52 @@
     margin-right: 3rem
 }
 
+.about-title {
+    font-size: 2.5rem;
+    font-family: 'Teko', Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 2rem !important;
+}
+
 .about-cont>p {
     font-size: 1.4rem;
     font-family: 'Oranienbaum', serif;
     line-height: 160%;
 }
 
-#about-title {
-    padding: 0;
-    font-size: 2.5rem;
-    font-family: 'Kaushan Script', cursive;
-    border-bottom: 4px solid black;
-    text-align: center;
-}
-
 .about-cont p span {
     font-size: 2rem;
     font-family: 'Kaushan Script', cursive;
 
+}
+
+.press-release-cont {
+    margin-bottom: 3rem
+}
+
+.press-release-title {
+    font-size: 3rem;
+    font-family: 'Teko', Arial, Helvetica, sans-serif
+}
+.press-release-item {
+    background-color: lightgray !important;
+    padding: 1%;
+    margin-top: 1rem
+
+}
+.press-release-item a {
+    font-size: 2rem;
+    font-family: 'Teko', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    cursor: pointer
+}
+
+.stars {
+    margin-top: 15px
+}
+.author {
+    font-size: 1.1rem;
+    margin-top: -10px
 }
 
 #footer section h1 {
@@ -58,6 +86,12 @@
     #wrapper>.bg {
         background-size: cover;
         background-position: 50% -25rem
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-cont img {
+        margin-bottom: 1rem
     }
 }
 
@@ -98,7 +132,8 @@
 
 @media (max-width: 425px) {
     #main {
-        margin-top: -5%
+        margin-top: -5%;
+        padding-top: 6%
     }
     #wrapper>.bg {
         background-position: 50% -5rem !important
