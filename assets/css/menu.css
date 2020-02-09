@@ -9,6 +9,15 @@
 }
 .description-title {
     font-family: 'Jacques Francois Shadow', cursive;
+}    
+.menu-title {
+    padding-top: 2rem;
+    font-size: 3.1rem;
+    font-family: 'Kaushan Script', cursive;
+    border-bottom: 4px solid black;
+    text-align: center;
+    text-transform: capitalize;
+
 }
 .section {
     display: grid;
@@ -102,6 +111,9 @@
     }
 
     @media (max-width: 425px) {
+        #wrapper>.bg {
+            background-size: contain !important;
+        }
         #main {
             margin-top: -5%
         }

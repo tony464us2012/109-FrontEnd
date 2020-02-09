@@ -24,10 +24,12 @@
 }
 
 .about-title {
-    font-size: 2.5rem;
-    font-family: 'Teko', Arial, Helvetica, sans-serif;
+    padding-top: 2rem;
+    font-size: 3.1rem;
+    font-family: 'Kaushan Script', cursive;
+    border-bottom: 4px solid black;
     text-align: center;
-    margin-top: 2rem !important;
+    text-transform: capitalize;
 }
 
 .about-cont>p {
@@ -140,8 +142,8 @@
     }
 
     #owners {
-        width: 150px;
-        margin: .6rem 1rem
+        width: 60%;
+        margin: 5% 20%
     }
 
     .about-cont>p {
@@ -176,10 +178,5 @@
 @media (max-width:320px) {
     #main {
         margin-top: -2.5rem
-    }
-
-    #owners {
-        margin-left: 25%;
-        margin-right: 25%
     }
 }
