@@ -3585,6 +3585,10 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
+		.links li a, .icons li a {
+			color: black
+		}
+
 		@media screen and (max-width: 980px) {
 
 			#nav {
@@ -3645,6 +3649,10 @@ input, select, textarea {
 		.delivery-cont {
 			display: flex;
 			justify-content: center;
+		}
+		.delivery-cont a {
+			cursor: pointer;
+			text-decoration: none;
 		}
 		.delivery-logo {
 			width: 60px;
