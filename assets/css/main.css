@@ -1574,6 +1574,9 @@ input, select, textarea {
 			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
+		#footer {
+			padding: 4rem 0 2rem
+		}
 		#footer, #copyright {
 			padding: 4rem 4rem 2rem 4rem
 		}
@@ -2059,7 +2062,6 @@ input, select, textarea {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 9999;
-        border: red solid 2px
 	}
 
 		#copyright input, #copyright select, #copyright textarea {
