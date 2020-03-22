@@ -81,10 +81,16 @@ body, #wrapper {
 .dl-1 img {
      margin-top: -.8rem
 }
+.green {
+    color: green;
+    font-weight: 800
+}
 
 .covid-alert {
     line-height: 99%;
-   
+}
+.uber-alert h1 {
+    margin-top: 4rem
 }
 
 .event-title {
