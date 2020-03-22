@@ -142,6 +142,13 @@ body, #wrapper {
     }
 }
 
+@media (min-width: 1441px) {
+    #wrapper>.bg {
+        background-size: cover
+    }
+    
+}
+
 @media (max-width: 1024px){
     .main-delivery {
     padding-right: 1.5rem
@@ -175,9 +182,9 @@ body, #wrapper {
     #wrapper>.bg {
         background-size: contain;
     }
-    /* #main {
-        padding-top: 1rem
-    } */
+    #main {
+        padding-top: 3rem
+    }
 
     .section {
         grid-template-columns: 1fr
