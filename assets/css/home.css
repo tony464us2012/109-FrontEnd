@@ -4,6 +4,10 @@
     padding: 0
 }
 
+.red {
+    color: red
+}
+
 .border {
     border: 2px solid black
 }
@@ -17,7 +21,10 @@ body, #wrapper {
 }
 
 #main {
-    text-align: center
+    text-align: center;
+    padding-top: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem
 }
 .main-delivery {
     background-color: white;
@@ -75,6 +82,11 @@ body, #wrapper {
      margin-top: -.8rem
 }
 
+.covid-alert {
+    line-height: 99%;
+   
+}
+
 .event-title {
     padding-top: 2rem;
     font-size: 3.1rem;
@@ -90,6 +102,9 @@ body, #wrapper {
 }
 .event-container img {
     width: 100%
+}
+#footer {
+    margin-top: 6rem !important
 }
 #footer section h1 {
     font-size: 2rem !important
@@ -154,9 +169,9 @@ body, #wrapper {
     #wrapper>.bg {
         background-size: contain;
     }
-    #main {
+    /* #main {
         padding-top: 1rem
-    }
+    } */
 
     .section {
         grid-template-columns: 1fr
@@ -171,6 +186,9 @@ body, #wrapper {
     .event-container {
         width: 90%;
         margin: 2rem auto 3rem !important;
+    }
+    .covid-alert {
+        font-size: 2rem
     }
 }
 
