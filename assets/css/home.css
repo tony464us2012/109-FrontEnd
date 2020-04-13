@@ -95,8 +95,7 @@ body, #wrapper {
 
 video {
     width: 420px;
-    margin-top: 2rem;
-    margin-bottom: 2rem
+    height: 320px;
 }
 
 .event-title {
@@ -213,13 +212,15 @@ video {
         font-size: 2rem
     }
     video {
-        width: 320px
+        width: 320px;
+        height: 220px
     }
 }
 
 @media (max-width: 375px) {
     video {
         width: 280px;
+        height: 180px;
     }
 }
 
