@@ -13,7 +13,7 @@
     "url": "git+https://github.com/tony464us2012/109-WEB.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tony464us2012/109-WEB/issues"
   },
@@ -22,8 +22,10 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "hbs": "^4.1.1",
     "nodemailer": "^6.4.2",
-    "nodemailer-mailgun-transport": "^2.0.0"
+    "nodemailer-mailgun-transport": "^2.0.0",
+    "stripe": "^8.47.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
