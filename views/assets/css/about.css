@@ -3,7 +3,7 @@
     background-color: black;
     background-image: url("../../images/outside.jpg");
     background-size: contain !important;
-    background-position: 50% 50%;
+    background-position: 50% -25%;
 }
 
 #header {

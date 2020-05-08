@@ -17,7 +17,7 @@
 }
 
 .sec1 ul li {
-    margin-top: -.9rem
+    list-style: none;
 }
 
 .sec1 p {
