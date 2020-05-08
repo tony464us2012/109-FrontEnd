@@ -2,7 +2,7 @@
 #wrapper>.bg {
     background-color: black;
     background-image: url("../../images/outside.jpg");
-    background-size: contain;
+    background-size: contain !important;
     background-position: 50% 50%;
 }
 
