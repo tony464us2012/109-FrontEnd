@@ -2,8 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors')
 const path = require('path')
-const stripe = require('stripe')('sk_test_tJb1IBmewplrO0tvqkjZT01q')
-// const stripe = require('stripe')('sk_live_GNJ2VHpoWt8oSTVgXqqRF4jo');
+const stripe = require('stripe')('sk_live_GNJ2VHpoWt8oSTVgXqqRF4jo');
 
 
 const PORT = process.env.PORT || 8080; 
@@ -57,7 +56,7 @@ app.post('/charge',  async (req, res) => {
             currency: 'usd',
             customer: customer.id,
             receipt_email: email,
-            description: `${amount} ${size} shirts`
+            description: `${amount} ${size} Shirt`
 
         });
        
