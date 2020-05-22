@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const cors = require('cors')
 const path = require('path')
-const stripe = require('stripe')('sk_live_GNJ2VHpoWt8oSTVgXqqRF4jo');
+const stripe = require('stripe')('sk_test_tJb1IBmewplrO0tvqkjZT01q')
+// const stripe = require('stripe')('sk_live_GNJ2VHpoWt8oSTVgXqqRF4jo');
 
 
 const PORT = process.env.PORT || 8080; 
@@ -33,6 +34,8 @@ app.post('/charge',  async (req, res) => {
     const tax = (totalAmount * .07).toFixed(2);
     const total = (totalAmount + Number(tax)).toFixed(2);
     const tocharge = total * 100;
+    const size = req.body.size;
+
     
     try {
         const customer = await stripe.customers.create(
@@ -53,7 +56,8 @@ app.post('/charge',  async (req, res) => {
             amount: tocharge,
             currency: 'usd',
             customer: customer.id,
-            receipt_email: email
+            receipt_email: email,
+            description: `${amount} ${size} shirts`
 
         });
        
@@ -66,20 +70,6 @@ app.post('/charge',  async (req, res) => {
 })
  
 
-
-// const session = await stripe.checkout.sessions.create({
-//     payment_method_types: ['card'],
-//     line_items: [{
-//       name: 'T-shirt',
-//       description: 'Comfortable cotton t-shirt',
-//       images: ['https://example.com/t-shirt.png'],
-//       amount: 1899,
-//       currency: 'usd',
-//       quantity: 1,
-//     }],
-//     success_url: 'https://example.com/success?session_id={CHECKOUT_SESSION_ID}',
-//     cancel_url: 'https://example.com/cancel',
-//   });
 
 
 app.listen (PORT, () => console.log('Server is starting at PORT, ', 8080))
