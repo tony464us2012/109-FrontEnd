@@ -60,7 +60,7 @@ app.post('/charge',  async (req, res) => {
     const size = req.body.size;
 
     mail = {
-        to:'tony464us2011@yahoo.com',
+        to:'109burgerjoint@gmail.com',
         subject: 'New T-Shirt Order',
         body: `Their is a new order. ${amount} ${size} shirt(s) ordered by ${name}. Delivery Amount: $${delivery} Total of $${total}. Email: ${email}. Phone Number: ${phone}. Address: ${address} ${city} ${state} ${postal_code}`
     }
