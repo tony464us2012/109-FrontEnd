@@ -2,8 +2,9 @@ const express = require('express');
 const app = express();
 const cors = require('cors')
 const path = require('path')
-const stripe = require('stripe')('sk_live_GNJ2VHpoWt8oSTVgXqqRF4jo');
-
+const stripe = require('stripe')('sk_live_GNJ2VHpoWt8oSTVgXqqRF4jo')
+const nodemailer = require('nodemailer');
+require('dotenv').config()
 
 const PORT = process.env.PORT || 8080; 
 
@@ -17,6 +18,29 @@ app.get('/', (req, res) => res.sendFile(path.resolve(__dirname, 'views', 'index.
 app.get('/paysuccess', (req, res) => res.sendFile(path.resolve(__dirname, 'views', 'success.html')))
 app.get('/payfailed', (req, res) => res.sendFile(path.resolve(__dirname, 'views', 'payfailed.html')))
 
+let transport = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: '109burgerjoint.business@gmail.com',
+        pass: 'sugarfree'
+    }
+});
+
+function sendEmail(mail) {
+    var mailOptions = {
+        from: '109burgerjoint.business@gmail.com',
+        to: mail.to,
+        subject: mail.subject,
+        html: mail.body
+    }
+    transport.sendMail(mailOptions, function(err, info) {
+        if (err) {
+            console.log(err)
+        } else {
+            console.log('Email sent')
+        }
+    })
+}
 
 app.post('/charge',  async (req, res) => {
     const token = req.body.stripeToken;
@@ -35,6 +59,11 @@ app.post('/charge',  async (req, res) => {
     const tocharge = total * 100;
     const size = req.body.size;
 
+    mail = {
+        to:'tony464us2011@yahoo.com',
+        subject: 'New T-Shirt Order',
+        body: `Their is a new order. ${amount} ${size} shirt(s) ordered by ${name}. Delivery Amount: $${delivery} Total of $${total}. Email: ${email}. Phone Number: ${phone}. Address: ${address} ${city} ${state} ${postal_code}`
+    }
     
     try {
         const customer = await stripe.customers.create(
@@ -59,7 +88,7 @@ app.post('/charge',  async (req, res) => {
             description: `${amount} ${size} Shirt`
 
         });
-       
+            sendEmail(mail)
             res.redirect('/paysuccess')
         
     } catch (error) {

@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 require('dotenv').config()
 
 
-let transporter = nodemailer.createTransport({
+let transport = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: '109burgerjoint.business@gmail.com',
