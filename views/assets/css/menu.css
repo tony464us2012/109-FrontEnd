@@ -77,6 +77,15 @@
     padding-top: 2rem;
 }
 
+    .consumer-advisory {
+        text-align: center;
+        padding: 1rem;
+    }
+    .consumer-advisory h3 {
+        font-size: 1.4rem !important;
+        margin-bottom: -.1rem !important
+    }
+
     #footer section h1 {
         font-size: 2rem !important
     }
@@ -123,8 +132,9 @@
         }
 
         .section>div {
-            margin-bottom: -8%;
+            margin-bottom: -5%;
         }
+       
 }
 
     @media(max-width: 400px) {
