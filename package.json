@@ -19,12 +19,19 @@
   },
   "homepage": "https://github.com/tony464us2012/109-WEB#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-validator": "^6.6.0",
     "hbs": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.26",
     "nodemailer": "^6.4.2",
     "nodemailer-mailgun-transport": "^2.0.0",
+    "react-flippy": "^0.1.5",
     "stripe": "^8.47.0"
   },
   "devDependencies": {
