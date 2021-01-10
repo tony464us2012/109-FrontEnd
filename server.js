@@ -6,7 +6,7 @@ const stripe = require('stripe')('sk_live_GNJ2VHpoWt8oSTVgXqqRF4jo')
 const nodemailer = require('nodemailer');
 require('dotenv').config()
 
-const PORT = process.env.PORT || 8080; 
+const PORT = process.env.PORT || 3000; 
 
 app.use(cors())
 app.use(express.urlencoded({ extended: false }));
@@ -100,5 +100,5 @@ app.post('/charge',  async (req, res) => {
 
 
 
-app.listen (PORT, () => console.log('Server is starting at PORT, ', 8080))
+app.listen (PORT, () => console.log('Server is starting at PORT, ', 3000))
 
